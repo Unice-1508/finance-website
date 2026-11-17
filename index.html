@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DhanaMitra - Smart & Colourful Personal Finance</title>
+  <link href="https://googleapis.com" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Colourful Gradient Navbar -->
+  <header>
+    <div class="logo">💰 Dhana<span>Mitra</span></div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#articles">Guides</a>
+      <a href="#calculators">Calculators</a>
+      <a href="#tips">Money Tips</a>
+    </nav>
+  </header>
+
+  <!-- Vibrant Hero Banner -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <span class="badge">🚀 2026 Smart Wealth Guide</span>
+      <h1>Grow Your Money With Confidence</h1>
+      <p>Mutual Funds, Stock Market, Govt Schemes mariyu Smart Savings gurinchi easy ga nerchukondi.</p>
+      <div class="hero-btns">
+        <a href="#calculators" class="btn btn-primary">Try Live Calculators</a>
+        <a href="#articles" class="btn btn-secondary">Read Guides</a>
+      </div>
+    </div>
+
+    <!-- Panda Image on Right Side -->
+    <div class="hero-image">
+      <img src="images/panda.jpg" alt="DhanaMitra Panda Mascot">
+    </div>
+  </section>
+
+  <!-- Colourful Category Stats Strip -->
+  <section class="stats-bar">
+    <div class="stat-box box-blue">
+      <h3>📈 Mutual Funds</h3>
+      <p>12% - 15% Avg Returns</p>
+    </div>
+    <div class="stat-box box-purple">
+      <h3>🏛️ Govt Schemes</h3>
+      <p>100% Safe & Tax Free</p>
+    </div>
+    <div class="stat-box box-orange">
+      <h3>💳 Credit & Loans</h3>
+      <p>Smart EMI Planning</p>
+    </div>
+    <div class="stat-box box-green">
+      <h3>🪙 Digital Gold</h3>
+      <p>Start With ₹100</p>
+    </div>
+  </section>
+
+  <!-- Colourful Articles Section -->
+  <section id="articles" class="container">
+    <h2 class="section-title">Latest Finance Guides</h2>
+    <div class="grid">
+      <div class="card card-1">
+        <span class="tag tag-green">Mutual Funds</span>
+        <h3>SIP Ante Enti? Nelaku ₹1,000 tho Kotlu Ela?</h3>
+        <p>Compounding power tho chinna savings ni pedda wealth ga marchadam elaago telusukondi.</p>
+        <a href="article.html" class="card-link">Read Full Guide →</a>
+      </div>
+
+      <div class="card card-2">
+        <span class="tag tag-blue">Govt Schemes</span>
+        <h3>2026 Best Post Office & Bank Schemes</h3>
+        <p>PPF, Sukanya Samriddhi mariyu FD interest rates comparison mariyu tax saving tips.</p>
+        <a href="article.html" class="card-link">Read Full Guide →</a>
+      </div>
+
+      <div class="card card-3">
+        <span class="tag tag-purple">Stock Market</span>
+        <h3>Beginners Stock Market & Demat Guide</h3>
+        <p>Safe investing rules, blue-chip stocks selection mariyu risk management basics.</p>
+        <a href="article.html" class="card-link">Read Full Guide →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Sliders Calculator Section -->
+  <section id="calculators" class="calc-wrapper">
+    <div class="container">
+      <h2 class="section-title white-text">Interactive SIP Wealth Calculator</h2>
+      <div class="calc-card">
+        <div class="calc-inputs">
+          <div class="input-group">
+            <div class="label-row">
+              <label>Monthly Investment</label>
+              <span class="val-badge" id="monthlyVal">₹5,000</span>
+            </div>
+            <input type="range" id="monthly" min="500" max="100000" step="500" value="5000" oninput="updateSIP()">
+          </div>
+
+          <div class="input-group">
+            <div class="label-row">
+              <label>Expected Return Rate (p.a)</label>
+              <span class="val-badge purple-badge" id="rateVal">12%</span>
+            </div>
+            <input type="range" id="rate" min="5" max="25" step="0.5" value="12" oninput="updateSIP()">
+          </div>
+
+          <div class="input-group">
+            <div class="label-row">
+              <label>Time Period (Years)</label>
+              <span class="val-badge orange-badge" id="yearsVal">10 Yrs</span>
+            </div>
+            <input type="range" id="years" min="1" max="30" step="1" value="10" oninput="updateSIP()">
+          </div>
+        </div>
+
+        <div class="calc-results">
+          <div class="res-item res-blue">
+            <span>Invested Amount</span>
+            <h3 id="investedOut">₹6,00,000</h3>
+          </div>
+          <div class="res-item res-green">
+            <span>Estimated Returns</span>
+            <h3 id="returnsOut">₹5,61,695</h3>
+          </div>
+          <div class="res-item res-gold">
+            <span>Total Wealth Value</span>
+            <h3 id="totalOut">₹11,61,695</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p><strong>Disclaimer:</strong> Ee website lo samacharam kevalam educational purpose kosam matrame.</p>
+    <p>© 2026 DhanaMitra Finance. Built with ❤️ for Smart Investors.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
